@@ -80,6 +80,7 @@ elencoUtenti.forEach(utente => {
 
 const meideUtenti = elencoUtenti.map(utente => {
   return console.log(utente.nome + " " + utente.cognome + " " + media) 
+  
 })
 
 
