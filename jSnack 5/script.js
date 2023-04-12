@@ -25,4 +25,23 @@ const biciclette = [
   }
 ]
 
-const {nome, peso} = biciclette
+
+const biciPiuLeggera = biciclette.reduce((biciPrecedente,biciSuccessiva) => biciPrecedente.peso < biciSuccessiva.peso ? biciPrecedente : biciSuccessiva)
+
+
+const div = document.querySelector("div")
+
+const {nome, peso} = biciPiuLeggera
+
+div.innerHTML = `<h1>La bici più leggera è ${nome} ${peso}</h1>`
+
+/*{
+  if (biciPrecedente.peso < biciSuccessiva.peso) {
+  return biciPrecedente
+  }else {
+    return biciSuccessiva
+  }
+})*/
+
+
+
