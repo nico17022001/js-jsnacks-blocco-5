@@ -42,6 +42,23 @@ const classe = [
   },
 ]
 
-const nomiUtenti = classe.map((nome) => {
-  return classe.name.toUpperCase()
+const nomiUtenti = classe.map((studente) => {
+  return studente.nome.toLocaleUpperCase() 
 })
+
+/*
+const utentiSup70 = classe.map((studente) => {
+  if (studente.voti > 70) {
+    return studente.nome 
+  }
+  
+}) 
+
+*/const utentiSup70 = classe.filter( elemento => elemento.voti > 70) 
+
+  const prova = classe.filter(elemento => elemento.voti > 70 && elemento.id > 120) 
+
+console.log(utentiSup70)
+
+console.log(prova) 
+

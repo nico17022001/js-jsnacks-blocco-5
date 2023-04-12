@@ -9,12 +9,6 @@ PASSAGGI
 */
 
 
-
-
-
-
-
-
 let elencoUtenti = [
   {
     nome : "Mariolino",
